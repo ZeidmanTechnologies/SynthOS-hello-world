@@ -1,0 +1,17 @@
+[source]
+file = hello.c
+file = world.c
+
+[task]
+entry = helloTask
+period = 1
+type = loop
+
+[task]
+entry = worldTask
+period = 1
+type = loop
+
+[task]
+entry = syncTask
+type = call
